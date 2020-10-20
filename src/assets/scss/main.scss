@@ -36,6 +36,17 @@ section{
     flex-basis: 100%;
     text-align: center;
     margin: 0 auto;
+    
+    &.left{
+        margin: inherit;
+        text-align: left;
+        h2{
+            span{
+                margin: inherit;
+                margin-top: 10px;
+            }
+        }
+    }
     h2{
         font-size: 30px;
         span{

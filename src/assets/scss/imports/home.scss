@@ -3,6 +3,7 @@
     
     background: url(../../img/banner.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-sizing: border-box;
@@ -22,16 +23,29 @@
 
 #oQueFazemos{
     background: $bckgDefault;
+    padding-bottom: 0px;
     .container{
         flex-wrap: wrap;
+        padding-bottom: 0px;
         .cards-o{
             display: flex;
             width: 100%;
-            flex-wrap: wrap;
+            @media (max-width:900px){
+                flex-wrap: wrap;
+            }
+            
             .cards-o-container{
                 background-color: #FFF;
                 margin: 10px;
-                
+                width: 100%;
+                margin-bottom: 0px;
+                @media (max-width:900px){
+                    width: 30%;
+                }
+
+                @media (max-width:650px){
+                    width: 45%;
+                }
                 .o_fazemos{
                     font-size: 60px;
                     display: flex;
@@ -57,4 +71,27 @@
             
         }
     }
+}
+
+#quemSomos{
+    .container{
+        flex-wrap: wrap;
+        .quem-somos-container{
+            flex-basis: 100%;
+            display: flex;
+            article{
+                width: 100%;
+                img{
+                    max-width: 100%;
+                }
+                p{
+                    &.title{
+                        color: $colorGreenDefault;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    
 }
