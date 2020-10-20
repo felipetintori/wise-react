@@ -1,5 +1,6 @@
 @import './imports/variables.scss';
 @import './imports/header.scss';
+@import './imports/home.scss';
 
 *{
   
@@ -8,6 +9,7 @@
 
 body{
     margin: 0px;
+    color: $colorBlackDefault;
 }
 
 .container{
@@ -17,5 +19,34 @@ body{
     padding: 15px;
     box-sizing: border-box;
     margin: 0 auto;
+}
+
+.btn{
+    background-color: $colorGreenDefault;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section{
+    padding: 20px 0px;
+}
+
+.title-default{
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0 auto;
+    h2{
+        font-size: 30px;
+        span{
+            background-color: $colorGreenDefault;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 60px;
+            height: 7px;
+            display: block;
+        }   
+    }
+    
 }
 
