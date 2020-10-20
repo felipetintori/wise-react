@@ -1,0 +1,21 @@
+@import './imports/variables.scss';
+@import './imports/header.scss';
+
+*{
+  
+    font-family: "Roboto";
+}
+
+body{
+    margin: 0px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
